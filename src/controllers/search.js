@@ -12,14 +12,14 @@ let search = async(req, res)=>{
 //_id-----------------------------------------------------------------------------
             let _id = dbfind[i]._id
 //name----------------------------------------------------------------------------
-            let name = dbfind[i].name
+            let name = dbfind[i].text
 //ingredients---------------------------------------------------------------------
             let ingredients = dbfind[i].ingredients.split('.').splice(1)
             let ingredientsArray=[]
             for (let j = 0; j < ingredients.length; j++) {
                 ingredientsArray.push( {
                     key:j+1,
-                    name:ingredients[j]
+                    text:ingredients[j]
                 })
                 
             }
@@ -31,7 +31,7 @@ let search = async(req, res)=>{
             for (let j = 0; j < preparation.length; j++) {
                 preparationArray.push( {
                     key:j+1,
-                    name:preparation[j]
+                    text:preparation[j]
                 })
                 
             }
