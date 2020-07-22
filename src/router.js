@@ -56,6 +56,9 @@ const data =[
       "__v": 1
     }
   ]
+//(buscar admin)-------------------------------------------------------
+const searchAdmin = require('./controllers/searchAdmin');
+router.get('/api/admin',searchAdmin);
 
 //(buscar)-------------------------------------------------------
 const search = require('./controllers/search');
