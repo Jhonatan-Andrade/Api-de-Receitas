@@ -2,7 +2,7 @@ const Receita = require('../models/receitaSchema')
 
 
 
-let search = async(req, res)=>{
+let adminSearch = async(req, res)=>{
     try {
         let dbfind = await Receita.find()
 
@@ -27,4 +27,4 @@ let search = async(req, res)=>{
     }
    
 }
-module.exports = search
+module.exports = adminSearch
